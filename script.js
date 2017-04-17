@@ -129,6 +129,7 @@ function populateshoppinglistonload()
     if (geturllistvalue) {
       geturllistvalue = geturllistvalue.split(',');
       shoppinglist = geturllistvalue;
+         alert(shoppinglist);
   }else if (y){
        y = y.split('%2C');
       shoppinglist = y;

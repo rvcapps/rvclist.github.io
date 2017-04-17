@@ -252,7 +252,7 @@ var btnupdate =  ' <input class="button" name="edit" type="button" value="Edit I
 var arrays = shoppinglist[i];
 arrays = "'"+arrays+"'";
 var btnaddcart =  '<input name="add" type="checkbox" id="adds" value="Add to Shopping Cart" onclick="addtoshopcart('+arrays+','+ i +')" />';
-var btnsharelist = '<input class="button" id="share" name="submit" type="submit" value="share" onclick="share()" />';
+var btnsharelist = '<input class="button" id="shares" name="shares" type="button" value="share list" onclick="share()" />';
 TheRow = '<li>' + shoppinglist[i] + btndelete + ' '  + btnaddcart + '</li>';
 TheList += TheRow;
 }

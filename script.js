@@ -5,14 +5,6 @@
 
 //v4.1
 
-
-function PassedList() {
-    var uri = "https://rvclist.github.io/index.html?list=" + shoppinglist;
-    var res = encodeURIComponent(uri);
-    document.getElementById("demo").innerHTML = res;
-}
-
-//v4.1
 //get values via URL
 function get(name){
     var url = window.location.search;
@@ -33,7 +25,6 @@ function passlist()
     var login = "o_3iokgmm945";
     var api_key = "R_f2f3c9387a374e3fc6bf4b1ec2c945c4";
     var long_url = "https://rvclist.github.io/index.html?list="+ shoppinglist;
-    alert(long_url);
     $.getJSON(
               "http://api.bitly.com/v3/shorten?callback=?",
               {

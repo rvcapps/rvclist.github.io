@@ -1,21 +1,76 @@
 //v 4.0 save / get array via cookies
 //v 4.0 read cookie on load and display
 
-//v4.0 
+//v4.0
+
+//v4.1
+
+
+function PassedList() {
+    var uri = "https://rvclist.github.io/index.html?list=" + shoppinglist;
+    var res = encodeURIComponent(uri);
+    document.getElementById("demo").innerHTML = res;
+}
+
+//v4.1
+//get values via URL
+function get(name){
+    var url = window.location.search;
+    var num = url.search(name);
+    var namel = name.length;
+    var frontlength = namel+num+1; //length of everything before the value
+    var front = url.substring(0, frontlength);
+    url = url.replace(front, "");
+    num = url.search("&");
+    
+    if(num>=0) return url.substr(0,num);
+    if(num<0)  return url;
+}
+
+//v4.1
+function passlist()
+{
+    var login = "o_3iokgmm945";
+    var api_key = "R_f2f3c9387a374e3fc6bf4b1ec2c945c4";
+    var long_url = 'https://rvclist.github.io/index.html?list='+ shoppinglist;
+    $.getJSON(
+              "http://api.bitly.com/v3/shorten?callback=?",
+              {
+              "format": "json",
+              "apiKey": api_key,
+              "login": login,
+              "longUrl": long_url
+              },
+              function(response)
+              {
+              alert('Shortened link is: ' + response.data.url);
+              document.getElementById("sharelist").innerHTML = 'Share URL:\n' + response.data.url;
+              copyToClipboard(response.data.url);
+              }
+              );
+}
+//v4.1
+function share()
+{
+   passlist();
+}
+
+function copyToClipboard(text) {
+    window.prompt("Copy & Share List!", text);
+}
 
 window.onload = function() {
- alert("Welcome to 'Shopping List' App!\n\nCreated by Rock Valley College\n**Javascript(Web233) Students**\n\nQuestions?\nemail Professor Chuck Konkol\nc.konkol@rockvalleycollege.edu\n\nRegister @ RockValleyCollege.edu");
- populateshoppinglistonload();
-  displayShoppinglists();
+    alert("Welcome to 'Shopping List' App!\n\nCreated by Rock Valley College\n**Javascript(Web233) Students**\n\nQuestions?\nemail Professor Chuck Konkol\nc.konkol@rockvalleycollege.edu\n\nRegister @ RockValleyCollege.edu");
+    populateshoppinglistonload();
+    displayShoppinglists();
     clearFocus();
 };
 
 function about()
 {
-     alert("Welcome to 'Shopping List' App!\n\nCreated by Rock Valley College\n**Javascript(Web233) Students**\n\nQuestions?\nemail Professor Chuck Konkol\nc.konkol@rockvalleycollege.edu\n\nRegister @ RockValleyCollege.edu");
-
+    alert("Welcome to 'Shopping List' App!\n\nCreated by Rock Valley College\n**Javascript(Web233) Students**\n\nQuestions?\nemail Professor Chuck Konkol\nc.konkol@rockvalleycollege.edu\n\nRegister @ RockValleyCollege.edu");
+    
 }
-
 //read cookie and return
 function readCookie(name) {
     var nameEQ = name + "=";
@@ -68,10 +123,16 @@ function populateshoppinglistonload()
   //remove unwanted chars and format
   y = remove_unwanted(y); 
   //spit array by comma %2C
-  y = y.split('%2C');
-  if (y) {
-    shoppinglist = y;
-   }
+//v 4 get URL
+  var geturllistvalue = get("list");
+    if (geturllistvalue) {
+      geturllistvalue = geturllistvalue.split(',');
+      shoppinglist = geturllistvalue;
+  }else if (y){
+       y = y.split('%2C');
+      shoppinglist = y;
+      alert(shoppinglist);
+  }
 }
 
 
@@ -190,6 +251,7 @@ var btnupdate =  ' <input class="button" name="edit" type="button" value="Edit I
 var arrays = shoppinglist[i];
 arrays = "'"+arrays+"'";
 var btnaddcart =  '<input name="add" type="checkbox" id="adds" value="Add to Shopping Cart" onclick="addtoshopcart('+arrays+','+ i +')" />';
+var btnsharelist = '<input class="button" id="share" name="submit" type="submit" value="share" onclick="share()" />';
 TheRow = '<li>' + shoppinglist[i] + btndelete + ' '  + btnaddcart + '</li>';
 TheList += TheRow;
 }
@@ -197,9 +259,12 @@ TheList += TheRow;
 if (arrayLength > 0)
 {
   document.getElementById("MyList").innerHTML = '<ul>' + TheList + '</ul>';
+  document.getElementById("sharebutton").innerHTML = btnsharelist;
 }else
 {
   document.getElementById("MyList").innerHTML = ' ';
+  document.getElementById("sharebutton").innerHTML = ' ';
+    document.getElementById("sharelist").innerHTML = ' ';
 }
 }
 
@@ -228,6 +293,7 @@ if (arrayLength > 0)
 }else{
   document.getElementById("labels").innerHTML = '';
   document.getElementById("MyCart").innerHTML = '';
+    
 }
 }
 

@@ -25,6 +25,9 @@ function passlist()
     //var login = "o_3iokgmm945";
     //var api_key = "R_f2f3c9387a374e3fc6bf4b1ec2c945c4";
     var long_url = "https://rvclist.github.io/index.html?list="+ shoppinglist;
+     document.getElementById("sharelist").innerHTML = 'Share URL:\n' + long_url;
+              copyToClipboard(long_url);
+    
     //$.getJSON(
     //          "http://api.bitly.com/v3/shorten?callback=?",
     //          {
@@ -35,8 +38,8 @@ function passlist()
     //          },
     //          function(response)
     //          {
-              document.getElementById("sharelist").innerHTML = 'Share URL:\n' + response.data.url;
-              copyToClipboard(response.data.url);
+   //           document.getElementById("sharelist").innerHTML = 'Share URL:\n' + response.data.url;
+    //          copyToClipboard(response.data.url);
     //          }
    //           );
 }

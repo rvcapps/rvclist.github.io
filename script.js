@@ -41,6 +41,7 @@ function passlist()
    alert("wow");
    alert("Error : "+ err);
 }
+ alert"no");
 }
 //v4.1
 function share()

@@ -44,6 +44,7 @@ function share()
 {
    passlist();
       var long_url = "https://rvclist.github.io/index.html?list="+ shoppinglist;
+    alert(getshorturl);
     if (getshorturl==0)
     {
        document.getElementById("sharelist").innerHTML = 'Share URL:\n' + long_url;

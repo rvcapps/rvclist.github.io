@@ -4,8 +4,6 @@
 //v4.0
 
 //v4.1
-
-//get values via URL
 function get(name){
     var url = window.location.search;
     var num = url.search(name);
@@ -14,11 +12,9 @@ function get(name){
     var front = url.substring(0, frontlength);
     url = url.replace(front, "");
     num = url.search("&");
-    
     if(num>=0) return url.substr(0,num);
     if(num<0)  return url;
 }
-
 //v4.1
 function passlist()
 {
@@ -26,8 +22,7 @@ function passlist()
    var login = "o_3iokgmm945";
    var api_key = "R_f2f3c9387a374e3fc6bf4b1ec2c945c4";
    var long_url = "https://rvclist.github.io/index.html?list="+ shoppinglist;
-    
-    $.getJSON(
+   $.getJSON(
              "http://api.bitly.com/v3/shorten?callback=?",
               {
              "format": "json",
@@ -38,11 +33,11 @@ function passlist()
              function(response)
              {
                 getshorturl = 1;
-              document.getElementById("sharelist").innerHTML = 'Share URL:\n' + response.data.url;
-              copyToClipboard(response.data.url);
+                document.getElementById("sharelist").innerHTML = 'Share URL:\n' + response.data.url;
+                copyToClipboard(response.data.url);
              }
               );
-    if (getshorturl === 0)
+    if (getshorturl===0)
     {
        document.getElementById("sharelist").innerHTML = 'Share URL:\n' + long_url;
        copyToClipboard(long_url);

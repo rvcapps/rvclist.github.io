@@ -37,8 +37,9 @@ function passlist()
                 copyToClipboard(response.data.url);
              });
   } catch(err) {
-   alert("wow");
-   alert("Error : "+ err);
+   //alert("Error : "+ err);
+    document.getElementById("sharelist").innerHTML = 'Share URL:\n' + long_url;
+    copyToClipboard(long_url);
 }
 }
 //v4.1

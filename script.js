@@ -22,10 +22,10 @@ function get(name){
 //v4.1
 function passlist()
 {
-    var getshorturl = 0;
+   var getshorturl = 0;
    var login = "o_3iokgmm945";
-    var api_key = "R_f2f3c9387a374e3fc6bf4b1ec2c945c4";
-    var long_url = "https://rvclist.github.io/index.html?list="+ shoppinglist;
+   var api_key = "R_f2f3c9387a374e3fc6bf4b1ec2c945c4";
+   var long_url = "https://rvclist.github.io/index.html?list="+ shoppinglist;
     
     $.getJSON(
              "http://api.bitly.com/v3/shorten?callback=?",

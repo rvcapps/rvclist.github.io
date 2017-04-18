@@ -85,8 +85,11 @@ function remove_unwanted(str) {
   if ((str===null) || (str===''))  
        return false;  
  else  
-   str = str.toString();  
+   str = str.toString();
+    //clean space
    str = str.replace(/%20/g, " ");
+    //clean !
+    str = str.replace(/%21/g, "!");
    str = str.replace(/%24/g, "$"); 
    str = str.replace(/%7C/g, " | ");
   return str.replace(/[^\x20-\x7E]/g, '');  

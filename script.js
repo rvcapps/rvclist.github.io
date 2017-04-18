@@ -123,6 +123,7 @@ function populateshoppinglistonload()
    //v 4.1 get URL
   var geturllistvalue = get("list");
     if (geturllistvalue) {
+        geturllistvalue = remove_unwanted(geturllistvalue);
       geturllistvalue = geturllistvalue.split(',');
       shoppinglist = geturllistvalue;
   }else if (y){

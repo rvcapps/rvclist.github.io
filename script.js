@@ -1,7 +1,27 @@
 //v 4.0 save / get array via cookies
 //v 4.0 read cookie on load and display
 
-//v4.0
+//v4.2
+
+function copyToClipboard(elementId) {
+  // Create a "hidden" input
+  var aux = document.createElement("input");
+  
+  aux.style.position = "fixed";
+  
+  aux.style.top = 0;
+  // Assign it the value of the specified element
+  aux.setAttribute("value", document.getElementById(elementId).innerHTML);
+  // Append it to the body
+  document.body.appendChild(aux);
+  // Highlight its content
+  aux.select();
+  // Copy the highlighted text
+  document.execCommand("copy");
+  // Remove it from the body
+  document.body.removeChild(aux);
+
+}
 
 //v4.1
 function get(name){
@@ -35,11 +55,15 @@ function passlist()
                 getshorturl = 1;
                 document.getElementById("sharelist").innerHTML = 'Share URL:\n' + response.data.url;
                 copyToClipboard(response.data.url);
+                // copyToClipboard('sharelist');
+                 //alert("ShoppingList URL Copied");
              });
   } catch(err) {
    //alert("Error : "+ err);
     document.getElementById("sharelist").innerHTML = 'Share URL:\n' + long_url;
+    //copyToClipboard("sharelist");
     copyToClipboard(long_url);
+    //alert("ShoppingList URL Copied");
 }
 }
 //v4.1
@@ -49,7 +73,7 @@ function share()
 }
 
 function copyToClipboard(text) {
-    window.prompt("Copy & Share List!", text);
+   window.prompt("Copy & Share List!", text);
 }
 
 window.onload = function() {

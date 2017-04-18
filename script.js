@@ -37,7 +37,7 @@ function passlist()
                 copyToClipboard(response.data.url);
              }
               );
-    if (getshorturl==="no")
+    if (getshorturl=="no")
     {
        document.getElementById("sharelist").innerHTML = 'Share URL:\n' + long_url;
        copyToClipboard(long_url);

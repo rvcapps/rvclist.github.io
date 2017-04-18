@@ -18,7 +18,7 @@ function get(name){
 //v4.1
 function passlist()
 {
-   var getshorturl = 0;
+   var getshorturl="no';
    var login = "o_3iokgmm945";
    var api_key = "R_f2f3c9387a374e3fc6bf4b1ec2c945c4";
    var long_url = "https://rvclist.github.io/index.html?list="+ shoppinglist;
@@ -32,12 +32,12 @@ function passlist()
               },
              function(response)
              {
-                getshorturl = 1;
+                getshorturl = "yes";
                 document.getElementById("sharelist").innerHTML = 'Share URL:\n' + response.data.url;
                 copyToClipboard(response.data.url);
              }
               );
-    if (getshorturl===0)
+    if (getshorturl==="no")
     {
        document.getElementById("sharelist").innerHTML = 'Share URL:\n' + long_url;
        copyToClipboard(long_url);

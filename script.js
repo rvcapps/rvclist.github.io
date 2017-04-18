@@ -53,7 +53,7 @@ function passlist()
              function(response)
              {
                 getshorturl = 1;
-                document.getElementById("sharelist").innerHTML = 'Share URL:\n' + response.data.url;
+                document.getElementById("sharelist").innerHTML = 'Share List:\n' + response.data.url;
                 copyToClipboard(response.data.url);
                 // copyToClipboard('sharelist');
                  //alert("ShoppingList URL Copied");

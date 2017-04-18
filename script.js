@@ -23,7 +23,7 @@ function passlist()
    var long_url = "https://rvclist.github.io/index.html?list="+ shoppinglist;
   try{
   $.getJSON(
-             "http://api.bitly.com/v3/shorten?callback=?",
+             "https://api-ssl.bitly.com/v3/shorten?callback=?",
               {
              "format": "json",
               "apiKey": api_key,

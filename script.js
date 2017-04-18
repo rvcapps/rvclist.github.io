@@ -1,29 +1,7 @@
 //v 4.0 save / get array via cookies
 //v 4.0 read cookie on load and display
 
-//v4.2
-
-function copyToClipboard(elementId) {
-  // Create a "hidden" input
-  var aux = document.createElement("input");
-  
-  aux.style.position = "fixed";
-  
-  aux.style.top = 0;
-  // Assign it the value of the specified element
-  aux.setAttribute("value", document.getElementById(elementId).innerHTML);
-  // Append it to the body
-  document.body.appendChild(aux);
-  // Highlight its content
-  aux.select();
-  // Copy the highlighted text
-  document.execCommand("copy");
-  // Remove it from the body
-  document.body.removeChild(aux);
-
-}
-
-//v4.1
+//v4.1 get values via URL
 function get(name){
     var url = window.location.search;
     var num = url.search(name);
@@ -35,6 +13,7 @@ function get(name){
     if(num>=0) return url.substr(0,num);
     if(num<0)  return url;
 }
+//v4.1 ShareList via bitly api
 function passlist()
 {
    var getshorturl=0;
@@ -66,12 +45,12 @@ function passlist()
     //alert("ShoppingList URL Copied");
 }
 }
-//v4.1
+//v4.1 share function
 function share()
 {
    passlist();
 }
-
+//v4.1 prompt message to copy URL
 function copyToClipboard(text) {
    window.prompt("Copy & Share List!", text);
 }
@@ -140,7 +119,8 @@ function populateshoppinglistonload()
   //remove unwanted chars and format
   y = remove_unwanted(y); 
   //spit array by comma %2C
-//v 4 get URL
+  
+   //v 4.1 get URL
   var geturllistvalue = get("list");
     if (geturllistvalue) {
       geturllistvalue = geturllistvalue.split(',');

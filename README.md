@@ -1,7 +1,7 @@
 Assignment Examples
 #### Week 1: http://plnkr.co/yEUWlcFn0kp6vG0zacNJ (Links to an external site.) 
 
-⋅⋅*Intro to JavaScript! HelloWorld Stuff!
+  *Intro to JavaScript! HelloWorld Stuff!
 
 #### Week 2: http://plnkr.co/znj4U3qsSx3mqAaX03KS (Links to an external site.) 
 

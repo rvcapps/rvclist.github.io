@@ -1,4 +1,7 @@
-Assignment Examples
+# JavaScript (Web233) Rock Valley College
+
+## Assignments
+
 #### Week 1: http://plnkr.co/yEUWlcFn0kp6vG0zacNJ (Links to an external site.) 
 
   * Intro to JavaScript! HelloWorld Stuff!

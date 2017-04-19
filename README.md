@@ -1,25 +1,25 @@
 Assignment Examples
 #### Week 1: http://plnkr.co/yEUWlcFn0kp6vG0zacNJ (Links to an external site.) 
 
-  *Intro to JavaScript! HelloWorld Stuff!
+  * Intro to JavaScript! HelloWorld Stuff!
 
 #### Week 2: http://plnkr.co/znj4U3qsSx3mqAaX03KS (Links to an external site.) 
 
-Values, Types,Operators
+  * Values, Types,Operators
 
 #### Week 3: http://plnkr.co/oQRTulPJpJBoIa4U3hXR (Links to an external site.) 
 
-Functions
+  * Functions
 
 #### Week 4: http://plnkr.co/BDCcqLRVUTK5BQAKhjLb (Links to an external site.) 
-Objects and Arrays
+  * Objects and Arrays
 
 #### Week 5: http://plnkr.co/uur3wfZV4erKFbltoXS4 (Links to an external site.) 
-Shopping List Version 1
+###### Shopping List Version 1
 
-It should have a place to store SHOPPINGLISTS
-It should have a way to display SHOPPINGLISTS
-It should have a way to add new SHOPPINGLISTS
+  * It should have a place to store SHOPPINGLISTS
+  * It should have a way to display SHOPPINGLISTS
+  * It should have a way to add new SHOPPINGLISTS
 
 #### Week 7: http://plnkr.co/Mw35NTujYHOkS4SqyHpE (Links to an external site.) 
 

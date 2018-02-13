@@ -13,7 +13,7 @@ function get(name){
     if(num>=0) return url.substr(0,num);
     if(num<0)  return url;
 }
-//v4.1 ShareList via bitly api
+//vFinal ShareList via bitly api
 function passlist()
 {
    var getshorturl=0;
@@ -45,7 +45,7 @@ function passlist()
     //alert("ShoppingList URL Copied");
 }
 }
-//v4.1 share function
+//vFinal share function
 function share()
 {
    passlist();

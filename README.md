@@ -131,6 +131,11 @@ Slides: http://bit.ly/2oliTOZ (Links to an external site.)
   * Work on CSS
   * Work on webpage content (photos, descriptions, title tag, etc.)
   * Final touches 
+  
+  Slides: http://bit.ly/2oliTOZ (Links to an external site.) 
+
+  * It should have ability to create a bit.ly link from URL
+  * It should have ability to share bit.ly link 
  
 #### Week 16: http://bit.ly/36JuiOE (Links to an external site.) 
    * Final Presentation of your Web App!

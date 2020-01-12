@@ -13,37 +13,38 @@ function get(name){
     if(num>=0) return url.substr(0,num);
     if(num<0)  return url;
 }
-//vFinal ShareList via bitly api
+//v4.1 ShareList via bitly api
 function passlist()
 {
-   var getshorturl=0;
-   var login = "o_3iokgmm945";
-   var api_key = "R_f2f3c9387a374e3fc6bf4b1ec2c945c4";
-   var long_url = "https://rvclist.github.io/index.html?list="+ shoppinglist;
-  try{
-  $.getJSON(
-             "https://api-ssl.bitly.com/v3/shorten?callback=?",
-              {
-             "format": "json",
-              "apiKey": api_key,
-             "login": login,
-              "longUrl": long_url
-              },
-             function(response)
-             {
-                getshorturl = 1;
-                document.getElementById("sharelist").innerHTML = 'Share List:\n' + response.data.url;
-                copyToClipboard(response.data.url);
-                // copyToClipboard('sharelist');
-                 //alert("ShoppingList URL Copied");
-             });
-  } catch(err) {
-   //alert("Error : "+ err);
-    document.getElementById("sharelist").innerHTML = 'Share List:\n' + long_url;
-    //copyToClipboard("sharelist");
-    copyToClipboard(long_url);
-    //alert("ShoppingList URL Copied");
-}
+ var url = "https://rvclist.github.io/index.html?list="+ shoppinglist;
+    var accessToken = "eff66075988ab2f610fba18455b493ce90540381";
+
+    var params = {
+        "long_url" : url           
+    };
+
+    $.ajax({
+        url: "https://api-ssl.bitly.com/v4/shorten",
+        cache: false,
+        dataType: "json",
+        method: "POST",
+        contentType: "application/json",
+        beforeSend: function (xhr) {
+            xhr.setRequestHeader("Authorization", "Bearer " + accessToken);
+        },
+        data: JSON.stringify(params)
+    }).done(function(data) {
+        //alert(data.link);
+         getshorturl = 1;
+         document.getElementById("sharelist").innerHTML = 'Share List:\n' + data.link;
+         copyToClipboard(data.link);
+    }).fail(function(data) {
+        //alert(data.link);
+      document.getElementById("sharelist").innerHTML = 'Share List:\n' + url;
+      //copyToClipboard("sharelist");
+      copyToClipboard(url);
+      //alert("ShoppingList URL Copied");
+    });
 }
 //vFinal share function
 function share()

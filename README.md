@@ -96,7 +96,7 @@ Slides: NONE
 
 #### Week 12: https://plnkr.co/uXmDaenQrZwdajh7pWdt (Links to an external site.) 
 
-###### Shopping List Version 3.1
+###### Shopping List Version 3.3
 
 Slides: http://bit.ly/2oliTOZ (Links to an external site.) 
 
@@ -111,6 +111,8 @@ Slides: http://bit.ly/2oliTOZ (Links to an external site.)
 
 ###### From this point we will work on your app inside of GitHub. Use my GitHub repo to help with below updates. See https://github.com/rvclist/rvclist.github.io (Links to an external site.) 
 
+###### Shopping List Version 3.4
+
   * Remove Cost Field
   * Remove "Add" text next to checkbox
   * Remove Version ?? from home page.
@@ -119,6 +121,8 @@ Slides: http://bit.ly/2oliTOZ (Links to an external site.)
 
 #### Week 14: https://rvclist.github.io/index.html?list=eggs,milk,bread (Links to an external site.)  
   * source: https://github.com/rvclist/rvclist.github.io (Links to an external site.) 
+  
+###### Shopping List Version 4.0
 
   * Add function to share shoppinglist array via URL pass by values
   * Add Share Button to share list
@@ -126,6 +130,8 @@ Slides: http://bit.ly/2oliTOZ (Links to an external site.)
   * Work on webpage content (photos, descriptions, title tag, etc.)
 
 #### Week 15: http://bit.ly/2pzC9Jx (Links to an external site.) 
+
+###### Shopping List Version 4.1
 
   * Add ability to convert shared URL to a bitly link
   

@@ -128,14 +128,15 @@ Slides: http://bit.ly/2oliTOZ (Links to an external site.)
 #### Week 15: http://bit.ly/2pzC9Jx (Links to an external site.) 
 
   * Add ability to convert shared URL to a bitly link
-  * Work on CSS
-  * Work on webpage content (photos, descriptions, title tag, etc.)
-  * Final touches 
   
-  Slides: http://bit.ly/2oliTOZ (Links to an external site.) 
+  Slides: http://bit.ly/2uGinTK
 
   * It should have ability to create a bit.ly link from URL
   * It should have ability to share bit.ly link 
+  --------------------
+  * Work on CSS
+  * Work on webpage content (photos, descriptions, title tag, etc.)
+  * Final touches 
  
 #### Week 16: http://bit.ly/36JuiOE (Links to an external site.) 
    * Final Presentation of your Web App!

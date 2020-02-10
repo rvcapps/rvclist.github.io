@@ -24,6 +24,8 @@
   * It should have a way to display SHOPPINGLISTS
   * It should have a way to add new SHOPPINGLISTS
 
+    http://plnkr.co/CkxNCNrpHwLDoH4DQzes 
+
 #### Week 7: http://plnkr.co/Mw35NTujYHOkS4SqyHpE (Links to an external site.) 
 
 ###### Shopping List Version 1.2

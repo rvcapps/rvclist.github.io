@@ -25,6 +25,17 @@
   * It should have a way to add new SHOPPINGLISTS
 
     http://plnkr.co/CkxNCNrpHwLDoH4DQzes 
+    
+#### Week 6: http://plnkr.co/bZs8gK (Links to an external site.)
+###### Shopping List Version 1.1
+
+Slides:http://bit.ly/2OZDZl5 
+
+It should have a place to store SHOPPINGLIST
+It should have a way to display SHOPPINGLIST
+It should have a way to add new SHOPPINGLIST 
+It should have a way to change a SHOPPINGLIST
+It should have a way to delete a SHOPPINGLIST
 
 #### Week 7: http://plnkr.co/Mw35NTujYHOkS4SqyHpE (Links to an external site.) 
 

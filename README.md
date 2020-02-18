@@ -26,7 +26,7 @@
 
     http://plnkr.co/CkxNCNrpHwLDoH4DQzes 
     
-#### Week 6: http://plnkr.co/bZs8gK (Links to an external site.)
+#### Week 6: http://plnkr.co/bZs8gK  (Links to an external site.)
 ###### Shopping List Version 1.1
 
 Slides:http://bit.ly/2OZDZl5 

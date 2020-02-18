@@ -41,6 +41,8 @@ It should have a way to delete a SHOPPINGLIST
 
 ###### Shopping List Version 1.2
 
+Slides: http://bit.ly/38Ckffl 
+
   * It should have a way to add new SHOPPINGLISTS
   * It should have a way to change a SHOPPINGLISTS
   * It should have a way to delete a SHOPPINGLISTS

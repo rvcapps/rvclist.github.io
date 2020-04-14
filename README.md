@@ -109,8 +109,8 @@
 <li style="font-weight: 400;"><span style="font-weight: 400;">It should have ability to </span><strong>load &amp; read cookie file function </strong><span style="font-weight: 400;">on </span><strong>Windows load</strong></li>
 <li style="font-weight: 400;">It should have ability to <strong>populate shoppinglist array from cookie file</strong></li>
 </ul>
-<p>Week 13: <a href="https://rvclist.github.io/">https://rvclist.github.io/</a> &nbsp; source code:&nbsp;<a class="instructure_file_link instructure_scribd_file" title="rvclist.github.io-master-v4.zip" href="https://rvceagle.instructure.com/courses/22254/files/2300844/download?wrap=1" data-api-endpoint="https://rvceagle.instructure.com/api/v1/courses/22254/files/2300844" data-api-returntype="File">rvclist.github.io-master-v4.zip</a></p>
-<p>From this point we will work on your app inside of GitHub. Use my GitHub repo to help with below updates. See&nbsp;<a class="external" href="https://github.com/rvclist/rvclist.github.io" target="_blank" rel="noopener">https://github.com/rvclist/rvclist.github.io </a></p>
+<p>Week 13: <a href="https://rvclist.github.io/rvclist13/">hhttps://rvclist.github.io/rvclist13/</a> &nbsp; source code:&nbsp;<a class="instructure_file_link instructure_scribd_file" title="rvclist.github.io-master-v4.zip" href="https://rvceagle.instructure.com/courses/22254/files/2300844/download?wrap=1" data-api-endpoint="https://rvceagle.instructure.com/api/v1/courses/22254/files/2300844" data-api-returntype="File">rvclist.github.io-master-v4.zip</a></p>
+<p>From this point we will work on your app inside of GitHub. Use my GitHub repo to help with below updates. See&nbsp;<a class="external" href="https://rvclist.github.io/rvclist13/" target="_blank" rel="noopener">https://rvclist.github.io/rvclist13/ </a></p>
 <ul>
 <li>Remove Cost Field</li>
 <li>Remove "Add" text next to checkbox</li>

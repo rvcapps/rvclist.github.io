@@ -25,7 +25,7 @@ function get(name){
 function passlist()
 {
  var url = "https://aquaaerobic.github.io/rvclist.github.io/index.html?list="+ shoppinglist;
-    var accessToken = "0e9ab2c5638439b3aae41c980b016ac2caf04bb6";
+    var accessToken = "d3710197e02a201ecfab9adacbe3c6d82c5cba96";
 
     var params = {
         "long_url" : url           

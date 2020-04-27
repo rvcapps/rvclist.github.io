@@ -24,7 +24,7 @@ function get(name){
 //v4.1 ShareList via bitly api
 function passlist()
 {
- var url = "https://aquaaerobic.github.io/rvclist.github.io/index.html?list="+ shoppinglist;
+ var url = "https://rvcapps.github.io/rvclist.github.io/index.html?list="+ shoppinglist;
     var accessToken = "d3710197e02a201ecfab9adacbe3c6d82c5cba96";
 
     var params = {
